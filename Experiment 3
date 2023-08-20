@@ -1,0 +1,81 @@
+//tanish verma
+//22070123123
+//Experiment no:3(a)
+
+#include<iostream>
+using namespace std;
+
+int main(){
+   char PRN[] = "23118"; // Array PRN[] = {'2', '3', '1', '2', '3', '\0'}
+   for (int i=0;PRN[i]!='\0'; i++){ // This loop runs until PRN[i] is not equal to '\0', which means the end of the array.
+    cout<<PRN[i]<<endl;
+   }
+return 0;
+}
+/*  OUTPUT
+2
+3
+1
+2
+3
+*/
+
+//exp 3(b) -Grading sysytem
+//22070123123
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    //intialise marks variable 
+    float avg , m1,m2,m3,m4,m5;
+    cout<<"enter your marks subject 1-";
+    cin>>m1;
+    cout<<"enter your marks subject 2-";
+    cin>>m2;
+    cout<<"enter your marks subject 3-";
+    cin>>m3;
+    cout<<"enter your marks subject 4-" ;
+    cin>>m4;
+    cout<<"enter your marks subject 5-";
+    cin>>m5;
+//avg=sum/2
+    avg=(m1+m2+m3+m4+m5)/5;
+    cout<<avg<<endl;
+//Apply Conditional statement to get a grade by using:-
+    if ( avg>=90)
+    {
+        cout<<"grade O";
+
+    }
+    else if( avg>= 80)
+    {
+        cout<<"grade A+";
+    }
+    else if(avg>= 70)
+    {
+        cout<<"grade A";
+    }
+    else if( avg>= 60)
+    {
+        cout<<"grade B";
+    }
+    else if(avg>= 45)
+    {
+        cout<<"grade c";
+    }
+    else
+    {
+        cout<<"You are dommed to be fail ";
+    }
+
+    
+    return 0;
+}
+/*Output
+enter your marks subject 1-60
+enter your marks subject 2-60
+enter your marks subject 3-60
+enter your marks subject 4-60
+enter your marks subject 5-60
+60
+grade B*/
